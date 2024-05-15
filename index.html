@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Expectancy and Food Consumption</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 id="mainTitle" class="main-title red-shadow">Sugar Consumption and Life Expectancy Around the World</h1>
+    <svg id="map" width="960" height="600"></svg>
+    <!-- Tooltip for displaying data on hover -->
+    <div class="tooltip" style="opacity:0;"></div>
+    <!-- SVG container for legend -->
+    <svg id="legend" width="200" height="550"></svg>
+    <!-- Button to toggle between sugar consumption and life expectancy data -->
+    <div class="toggle-container-bottom">
+        <button id="toggleButton" class="toggle-button sugar-button">Show Life Expectancy</button>
+    </div>
+    <h1 class="mainTitle">Meat Consumption in Countries where People Live the Longest</h1>
+    <!-- Buttons to filter the meat consumption chart by meat type -->
+    <div class="button-container">
+        <button id="showAllButton" onclick="showAll()">Show All</button>
+        <button id="beefButton" onclick="filterByMeat('BEEF')">BEEF</button>
+        <button id="pigButton" onclick="filterByMeat('PIG')">PIG</button>
+        <button id="poultryButton" onclick="filterByMeat('POULTRY')">POULTRY</button>
+        <button id="sheepButton" onclick="filterByMeat('SHEEP')">SHEEP</button>
+    </div>
+    <svg id="meatChart" width="960" height="500"></svg>
+    <script src="script.js"></script>
+</body>
+</html>

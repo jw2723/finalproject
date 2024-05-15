@@ -1,0 +1,123 @@
+body {
+    font-family: 'Apple Chancery', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1.main-title, h1.sub-title {
+    font-family: 'Apple Chancery', cursive;
+}
+
+/* Apply font to tooltips, legend, buttons, and axis text */
+.tooltip, .legend, .toggle-button, .button-container button, .axis text {
+    font-family: 'Apple Chancery', cursive;
+}
+
+h1.main-title {
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1.sub-title {
+    font-size: 2em;
+    color: #333;
+    text-shadow: 1px 1px #66b266;
+    margin: 20px 0;
+}
+
+
+/* Red & green shadow text style for sugar consumption/life expectancy */
+.red-shadow {
+    text-shadow: 2px 2px #ff6666;
+}
+.green-shadow {
+    text-shadow: 2px 2px #66b266;
+}
+
+/* Country outlines */
+.country {
+    stroke: #fff;
+    stroke-width: 0.5;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 55px;
+    padding: 2px;
+    font: 12px 'Apple Chancery', cursive;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.legend {
+    font-size: 12px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+/* Style toggle containers */
+.toggle-container, .toggle-container-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Style for toggle button */
+.toggle-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Apple Chancery', cursive;
+}
+
+/* Different color for buttons */
+.sugar-button {
+    background-color: #66b266;
+    color: #fff;
+}
+.life-expectancy-button {
+    background-color: #ff6666;
+    color: #fff;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style for buttons in the container */
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-family: 'Apple Chancery', cursive;
+}
+
+/* Hover effect for buttons */
+.button-container button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Style for active buttons */
+.button-container button.active {
+    border: 2px solid #333;
+    background-color: #aaa;
+}
+
+.axis text {
+    font-family: 'Apple Chancery', cursive;
+}
